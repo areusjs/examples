@@ -1,0 +1,17 @@
+{
+  "name": "express-http-service",
+  "version": "0.1.0",
+  "description": "Express.js HTTP Service",
+  "main": "index.js",
+  "author": "Yuriy Nemtsov <nemtsov@gmail.com> (http://yuriynemtsov.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "areus-di": "^0.2.0",
+    "areus-http-resource": "^0.1.0",
+    "bunyan": "^1.0.1",
+    "express": "^4.9.4",
+    "lru-cache": "^2.5.0",
+    "mongoskin": "^1.4.4",
+    "nconf": "^0.6.9"
+  }
+}
