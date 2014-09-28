@@ -6,7 +6,7 @@
   "author": "Yuriy Nemtsov <nemtsov@gmail.com> (http://yuriynemtsov.com/)",
   "license": "MIT",
   "dependencies": {
-    "areus-di": "^0.2.0",
+    "areus-di": "^0.4.0",
     "areus-http-resource": "^0.1.0",
     "bunyan": "^1.0.1",
     "express": "^4.9.4",
