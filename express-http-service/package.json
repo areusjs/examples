@@ -11,6 +11,7 @@
     "bunyan": "^1.0.1",
     "express": "^4.9.4",
     "lru-cache": "^2.5.0",
+    "lru-cache-pool": "^0.1.1",
     "mongoskin": "^1.4.4",
     "nconf": "^0.6.9"
   }

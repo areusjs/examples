@@ -2,6 +2,7 @@ var express = require('express'),
   nconf = require('nconf'),
   mongo = require('mongoskin'),
   LRU = require('lru-cache'),
+  LRUPool = require('lru-cache-pool'),
   bunyan = require('bunyan'),
   DI = require('areus-di'),
   Resource = require('areus-http-resource'),
@@ -17,18 +18,8 @@ nconf.argv().env().file({
 // define common services
 di.provide({
   config: nconf,
-
   db: mongo.db(nconf.get('mongo:uri')),
-
-  cache: {
-    _caches: {},
-    get: function (name, options) {
-      var cache = this._caches[name] || LRU(options);
-      this._caches[name] = cache;
-      return cache;
-    }
-  },
-
+  cache: LRUPool(LRU),
   logger: {
     get: function (name) {
       return bunyan.createLogger({
