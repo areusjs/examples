@@ -1,0 +1,17 @@
+{
+  "name": "express-no-di",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.0.1",
+    "express": "^4.9.4",
+    "glob": "^4.0.6",
+    "lru-cache": "^2.5.0",
+    "lru-cache-pool": "^0.1.1",
+    "mongoskin": "^1.4.4",
+    "nconf": "^0.6.9"
+  }
+}
